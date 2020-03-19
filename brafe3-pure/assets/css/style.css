@@ -1,0 +1,109 @@
+body, p, h1, ul, li {
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #252525;
+  background: #e7e4d8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background: #D6D3C8;
+  padding: 20px;
+}
+
+.header::after, .haeder::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.header-logo {
+  float: left;
+}
+
+.header-menu ul {
+  float: right;
+}
+
+.header-menu li {
+  display: inline-block;
+}
+
+.header-menu li a {
+  color: #252525;
+  font-size: 1.125em;
+  padding: 0 10px;
+}
+
+.header-menu li:first-child a {
+  padding-left: 0;
+}
+
+.side-nav {
+  width: 300px;
+  background: #252525;
+  float: left;
+}
+
+.side-nav li a {
+  display: block;
+  color: #FFFFFF;
+  border-bottom: 2px solid #484846;
+  font-size: 1.125em;
+  padding: 20px;
+}
+
+.side-nav li a::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('../images/icons.png');
+  position: relative;
+  top: 5px;
+  margin-right: 15px;
+}
+
+.nav-accounting::before {
+  background-position: 0 0;
+}
+
+.nav-products::before {
+  background-position: 0 -24px;
+}
+
+.nav-pages::before {
+  background-position: 0 -48px;
+}
+
+.nav-plugins::before {
+  background-position: 0 -72px;
+}
+
+.nav-forms::before {
+  background-position: 0 -96px;
+}
+
+.nav-accommodation::before {
+  background-position: 0 -120px;
+}
