@@ -59,10 +59,8 @@ a {
   padding-left: 0;
 }
 
-.main-container::after, .main-container::before {
-  content: '';
-  display: table;
-  clear: both;
+.main-container {
+  display: flex;
 }
 
 .side-nav {
@@ -115,10 +113,8 @@ a {
 }
 
 .products {
-  float: left;
   width: calc(100% - 300px);
   margin: 0 auto;
-  max-width: 960px;
   padding: 20px;
 }
 
@@ -198,4 +194,12 @@ a {
   font-weight: bold;
   width: 70px;
   display: inline-block;
+}
+
+.footer {
+  background: #D6D3C8;
+  text-align: center;
+  padding: 60px 0;
+  font-size: 1.125em;
+  line-height: 1.4em;
 }
