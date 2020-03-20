@@ -106,11 +106,18 @@ a {
 }
 
 .products {
-	
+	flex: 1;
+	padding: 20px 10px;
+}
+
+.products header {
+	display: flex;
 }
 
 .products h1 {
 	font-size: 2.25em;
+	flex-grow: 1;
+	margin-right: 20px;
 }
 
 .add-products {
@@ -130,6 +137,7 @@ a {
 	box-shadow: 0 1px 3px 0 rgba(0,0,0,.35);
 	margin-top: 20px;
 	position: relative;
+	display: flex;
 }
 
 
@@ -146,6 +154,10 @@ a {
 
 .products-item a:hover {
 	background: url('../images/edit-hover.svg') no-repeat;
+}
+
+.products-item img {
+	align-self: flex-start;
 }
 
 .products-item ul {
@@ -219,5 +231,13 @@ a {
 		color: #252525;
 		background: #252525;
 		border-radius: 4px;
+	}
+
+	.products header {
+		flex-direction: column;
+	}
+
+	.products-item {
+		flex-direction: column;
 	}
 }
